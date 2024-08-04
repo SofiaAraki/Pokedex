@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links(icone, css e js)-->
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--'defer'executa o js apos carregar o html-->
+    <script defer src="./js/script.js"></script>
+
+    <title>Pokédex Sofia</title>
+</head>
+<body>
+    <!--'main'é o conteudo principal do body(corpo do site)-->
+    <main>
+        <!--imagem do pokemon configurada no script-->
+        <img src="#" alt="pokemon" class="pokemon_image">
+        <!--informações do pokemon configurado no script-->
+        <h1 class="pokemon_data">
+            <!--cria uma classe para configurar o numero do pokemon no css e no scritp-->
+            <span class="pokemon_number"></span> - <!--'-'separa o numero do nome do pokemon(estetica)-->
+            <!--cria uma classe para configurar o nome do pokemon no css e no scritp-->
+            <span class="pokemon_name"></span>
+        </h1>
+        <!--cria um formulario para pesquisar os pokemons por numero ou nome(configurado no script)-->
+        <form class="form">
+            <input
+                type="search"
+                id="search"
+                class="input_search" 
+                placeholder="Name or Number" 
+                required
+            /> <!--'required' faz com que o campo de pesquisa seja obrigatorio-->
+        </form>
+        <!--cria uma div com dois botoes para avançar e voltar nos pokemons(configurado no script)-->
+        <div class="buttons">
+            <!--'&lt'para'>'pois pode ocorrer erro de sintaxe-->
+            <button class="button btn-prev">Prev &lt;</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+        <!--imagem da pokedex(configurada no css e script)-->
+        <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+    </main>
+</body>
+</html>
